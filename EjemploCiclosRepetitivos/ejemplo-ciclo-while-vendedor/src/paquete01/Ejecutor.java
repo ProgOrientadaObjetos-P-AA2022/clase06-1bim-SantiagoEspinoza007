@@ -44,10 +44,10 @@ public class Ejecutor {
                     v.obtenerPagoMensual());
 
             entrada.nextLine(); // limpieza del buffer
-            System.out.println("Desea ingresar más vendedores. Ingrese n para"
-                    + "salir");
+            System.out.println("Desea ingresar más vendedores. Ingrese no para"
+                    + " salir");
             opcion = entrada.nextLine();
-            if (opcion.equals("n")) {
+            if (opcion.equals("no")) {
                 bandera = false;
             }
 

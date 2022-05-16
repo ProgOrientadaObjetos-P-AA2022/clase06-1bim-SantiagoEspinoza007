@@ -94,6 +94,19 @@ public class Hospital {
     }
     
     
-    
+    @Override
+            public String toString(){
+                String cadena = String.format("\tDatos Hospital\n" +
+                    "Nombre del hospital: %s\n" +
+                    "Ciudad del hospital: %s\n\"\n" +
+                    "Número de camas: %d\n\"\n" +
+                    "Número de doctores: %d\n" +
+                    "Presupuesto anual: %.2f\n"+
+                    obtenerNombreHospital(),
+                    obtenerCiudadHospital(),
+                    obtenerNumeroDoctores(),
+                    obtenerPresupuestoAnual());
+                return cadena;
+            }
     
 }
